@@ -1,0 +1,77 @@
+.pageTitle {
+  margin-bottom: 1.5rem;
+}
+.pageTitle h1 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+.pageTitle p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 800px) { .twoCol { grid-template-columns: 1fr; } }
+
+.eventItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.07);
+}
+.eventItem:last-child { border-bottom: none; }
+
+.dateBox {
+  background: var(--surface3);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  width: 42px;
+  text-align: center;
+  padding: 5px 4px;
+  flex-shrink: 0;
+}
+.month {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: var(--gold-dim);
+}
+.day {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1.1;
+}
+.eventName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+.eventMeta {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.noEvents {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-align: center;
+  padding: 1.5rem 0;
+}

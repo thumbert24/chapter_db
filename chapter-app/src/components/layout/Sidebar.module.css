@@ -1,0 +1,105 @@
+.sidebar {
+  width: var(--sidebar-w);
+  background: var(--surface);
+  border-right: 1px solid var(--gold-border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px 14px;
+}
+
+.crest {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-border-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.brandSub {
+  font-family: var(--font-display);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.14em;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-border-bright), transparent);
+  margin: 0 0 8px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  gap: 2px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  transition: all .15s;
+  position: relative;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--gold-light);
+  background: var(--gold-subtle);
+}
+
+.active {
+  color: var(--gold);
+  background: var(--gold-subtle);
+}
+
+.chevron {
+  margin-left: auto;
+  color: var(--gold-dim);
+}
+
+.footer {
+  padding: 12px 16px;
+  border-top: 1px solid var(--gold-border);
+}
+
+.footerText {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}

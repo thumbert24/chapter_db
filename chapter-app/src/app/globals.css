@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --gold:         #C9A84C;
+  --gold-light:   #E8C96A;
+  --gold-dim:     #8B6E2A;
+  --gold-subtle:  rgba(201,168,76,0.12);
+  --gold-border:  rgba(201,168,76,0.22);
+  --gold-border-bright: rgba(201,168,76,0.5);
+
+  --black:    #090909;
+  --surface:  #111111;
+  --surface2: #181818;
+  --surface3: #202020;
+  --surface4: #282828;
+
+  --text:       #EDE8DC;
+  --text-muted: #7A7265;
+  --text-dim:   #4A4540;
+
+  --green:  #4CAF7A;
+  --red:    #C94C4C;
+  --amber:  #C9872A;
+  --blue:   #4C82C9;
+
+  --green-bg:  rgba(76,175,122,0.12);
+  --red-bg:    rgba(201,76,76,0.12);
+  --amber-bg:  rgba(201,135,42,0.12);
+  --blue-bg:   rgba(76,130,201,0.12);
+
+  --sidebar-w: 220px;
+  --header-h:  54px;
+  --radius:    6px;
+  --radius-lg: 10px;
+
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body:    'Crimson Text', Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(201,168,76,0.5); }
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(201,168,76,0.3);
+  color: var(--text);
+}
+
+/* Form base resets */
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-light); }

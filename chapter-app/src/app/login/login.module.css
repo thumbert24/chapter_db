@@ -1,0 +1,199 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 50% 0%, rgba(201,168,76,0.06) 0%, transparent 70%),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 80px,
+      rgba(201,168,76,0.03) 80px,
+      rgba(201,168,76,0.03) 81px
+    );
+  pointer-events: none;
+}
+
+.ornament {
+  position: absolute;
+  display: flex;
+  gap: 3rem;
+  opacity: 0.04;
+  top: 15%;
+  user-select: none;
+}
+
+.greek {
+  font-family: var(--font-display);
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 60px rgba(201,168,76,0.05);
+}
+
+.crest {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.12);
+  border: 1px solid var(--gold-border-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  letter-spacing: 0.12em;
+  font-family: var(--font-display);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-border-bright), transparent);
+  margin: 1.5rem 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  padding: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: calc(var(--radius) - 2px);
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  transition: all .15s;
+}
+
+.tabActive {
+  background: var(--surface3);
+  color: var(--gold);
+}
+
+.form { display: flex; flex-direction: column; gap: 1rem; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.input {
+  background: var(--surface2);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s;
+  font-size: 14px;
+}
+
+.input:focus { border-color: var(--gold-border-bright); }
+.input::placeholder { color: var(--text-dim); }
+
+.error {
+  background: var(--red-bg);
+  border: 1px solid rgba(201,76,76,0.3);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--red);
+}
+
+.btn {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: var(--radius);
+  padding: 11px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+  margin-top: 0.25rem;
+}
+
+.btn:hover:not(:disabled) { background: var(--gold-light); }
+.btn:active:not(:disabled) { transform: scale(0.99); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.sentMsg {
+  background: var(--green-bg);
+  border: 1px solid rgba(76,175,122,0.3);
+  border-radius: var(--radius);
+  padding: 1rem;
+  font-size: 14px;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.7;
+}
+
+.sentMsg strong { color: var(--gold); }
+
+.footer {
+  position: relative;
+  margin-top: 1.5rem;
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  font-family: var(--font-display);
+}

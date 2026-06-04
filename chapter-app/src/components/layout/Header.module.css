@@ -1,0 +1,89 @@
+.header {
+  height: var(--header-h);
+  background: var(--surface);
+  border-bottom: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  flex-shrink: 0;
+}
+
+.left {}
+
+.breadcrumb {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconBtn {
+  background: none;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .15s;
+}
+
+.iconBtn:hover {
+  color: var(--gold);
+  border-color: var(--gold-border-bright);
+  background: var(--gold-subtle);
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface2);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  padding: 4px 10px 4px 6px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-border-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userEmail {
+  font-size: 11px;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.userRole {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--gold-dim);
+  text-transform: capitalize;
+}
