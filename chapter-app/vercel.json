@@ -1,8 +1,4 @@
 // Source - https://stackoverflow.com/a/75904914
 // Posted by JoyShaheb
 // Retrieved 2026-06-04, License - CC BY-SA 4.0
-
-{
-  "source": "/(.*)",
-  "destination": "/index.html"
-}
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
